@@ -1,3 +1,9 @@
+.crypto_logos {
+  display: flex;
+  justify-content: center;
+  scroll-behavior: smooth;
+}
+
 .crypto_logos img {
   width: 150px;
   border-radius: 50%;
