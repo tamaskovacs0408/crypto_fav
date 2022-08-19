@@ -25,7 +25,7 @@ function App() {
             <>
             <h2>{coinData.name}</h2>
             <h3>{coinData.rank}</h3>
-            <h4>{coinData.quotes.USD.price}</h4>
+            <h4>{(coinData.quotes.USD.price).toFixed(3)} $</h4>
             </>
       </div>
     </div>

@@ -5,7 +5,6 @@ import BNB from './BNB/BNB';
 import Solana from './Solana/Solana';
 import Avalanche from "./Avalanche/Avalanche";
 import Dodge from './Dodge/Dodge';
-import Shiba from './Shiba/Shiba';
 import Polkadot from './Polkadot/Polkadot';
 import Cardano from './Cardano/Cardano';
 import XRP from './XRP/XRP';
@@ -19,7 +18,6 @@ const Buttons = (props) => {
     <Avalanche handleClick={props.handleClick}/>
     <Cardano handleClick={props.handleClick}/>
     <Dodge handleClick={props.handleClick}/>
-    <Shiba handleClick={props.handleClick}/>
     <Polkadot handleClick={props.handleClick}/>
     <XRP handleClick={props.handleClick}/>
   </div>;
