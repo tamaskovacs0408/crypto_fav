@@ -5,7 +5,7 @@ export default function Solana(props) {
   return (
     <div>
       <img src={SOLLogo} alt="Solana logo" />
-      <button value={'sol-solana'} onClick={props.handleClick}>
+      <button value={'SOLUSDT'} onClick={props.handleClick}>
         Solana
       </button>
     </div>

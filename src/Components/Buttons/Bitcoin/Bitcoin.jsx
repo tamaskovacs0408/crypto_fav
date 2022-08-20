@@ -5,7 +5,7 @@ const Bitcoin = (props) => {
   return (
     <div>
       <img src={BTCLogo} alt="Bitcon logo" />
-      <button value={'btc-bitcoin'} onClick={props.handleClick}>
+      <button value={'BTCUSDT'} onClick={props.handleClick}>
         Bitcoin
       </button>
     </div>

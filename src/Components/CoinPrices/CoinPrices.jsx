@@ -1,10 +1,11 @@
 import React from 'react'
 
-export default function CoinPrices(props) {
+export default function CoinPrices({data}) {
   return (
     <div>
-      <h2>{props.coinName}</h2>
-      <h3>{props.coinPrice}</h3>
+      <h1>{data.symbol}</h1>
+      <h2>{data.lastPrice}</h2>
+      <h3>{data.priceChangePercent}</h3>
     </div>
   )
 }

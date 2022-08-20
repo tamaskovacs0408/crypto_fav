@@ -1,35 +1,42 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Buttons from './Components/Buttons/Buttons';
-// import CoinPrices from './Components/CoinPrices/CoinPrices';
+import CoinPrices from './Components/CoinPrices/CoinPrices';
 import {COIN_API} from './api';
 import axios from 'axios';
 import './App.css';
 //
 function App() {
-  // const [coinId, setCoinId] = useState('');
   const [coinData, setCoinData] = useState([]);
 
   const handleClick = (event) => {
     let coinId = event.target.value;
+    console.log({coinId})
 
-    axios.get(`${COIN_API}${coinId}`)
-      .then(res => setCoinData(res.data))
-      .catch(err => console.log(err))
+    const getData = async() => {
+        await axios.get(`${COIN_API}`)
+          .then(res => setCoinData((res.data).filter(coin => coin.symbol === coinId)))
+          .catch(err => console.log(err))
+      }
+      getData()
   }
-    
 
   return (
-    <div className="App">
+    <div className="App"> 
       <Buttons handleClick={handleClick}/>
-      <div>
-            <>
-            <h2>{coinData.name}</h2>
-            <h3>{coinData.rank}</h3>
-            <h4>{(coinData.quotes.USD.price).toFixed(3)} $</h4>
-            </>
-      </div>
+      <>
+      <h1>{coinData[0].symbol}</h1>
+      <h2>{coinData[0].lastPrice}</h2>
+      </>
     </div>
   );
 }
 
 export default App;
+
+
+// const getData = async() => {
+//   await axios.get(`${COIN_API}${coinId}`)
+//     .then(res => setCoinName(res.data))
+//     .catch(err => console.log(err))
+// }
+// getData()

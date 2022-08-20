@@ -5,7 +5,7 @@ export default function XRP(props) {
   return (
     <div>
       <img src={XRPLogo} alt="XRP logo" />
-      <button value={"xrp-xrp"} onClick={props.handleClick}>
+      <button value={"XRPUSDT"} onClick={props.handleClick}>
         XRP
       </button>
     </div>
