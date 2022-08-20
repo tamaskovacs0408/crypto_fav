@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+
 
 export default function CoinPrices({data}) {
   return (
-    <div>
-      <h1>{data.symbol}</h1>
-      <h2>{data.lastPrice}</h2>
-      <h3>{data.priceChangePercent}</h3>
+    <div className='price_container'>
+      <h1>Current price</h1>
+      <h2 key={data.symbol}>{parseFloat(data.lastPrice).toFixed(2)} $</h2>
     </div>
   )
 }

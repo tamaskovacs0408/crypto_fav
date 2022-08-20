@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Buttons from './Components/Buttons/Buttons';
 import CoinPrices from './Components/CoinPrices/CoinPrices';
 import {COIN_API} from './api';
@@ -7,33 +7,32 @@ import './App.css';
 //
 function App() {
   const [coinData, setCoinData] = useState([]);
+  const [coinId, setCoinId] = useState('');
 
   const handleClick = (event) => {
-    let coinId = event.target.value;
-    console.log({coinId})
-
-    const getData = async() => {
-        await axios.get(`${COIN_API}`)
-          .then(res => setCoinData((res.data).filter(coin => coin.symbol === coinId)))
-          .catch(err => console.log(err))
-      }
-      getData()
+    setCoinId(event.target.value)
   }
+
+  useEffect(() => {
+    axios.get(`${COIN_API}`)
+      .then(res => setCoinData(res.data))
+      .catch(err => console.log(err))
+  }, [coinId]);
 
   return (
     <div className="App"> 
       <Buttons handleClick={handleClick}/>
-      {coinData && <CoinPrices data={coinData[0]}/>}
+      <>
+        {coinData
+          .filter(coin => coin.symbol === coinId)
+          .map(data => {
+            return <CoinPrices data={data}/>
+          }
+            
+        )}
+      </>
     </div>
   );
 }
 
 export default App;
-
-
-// const getData = async() => {
-//   await axios.get(`${COIN_API}${coinId}`)
-//     .then(res => setCoinName(res.data))
-//     .catch(err => console.log(err))
-// }
-// getData()
