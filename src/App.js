@@ -23,10 +23,7 @@ function App() {
   return (
     <div className="App"> 
       <Buttons handleClick={handleClick}/>
-      <>
-      <h1>{coinData[0].symbol}</h1>
-      <h2>{coinData[0].lastPrice}</h2>
-      </>
+      {coinData && <CoinPrices data={coinData[0]}/>}
     </div>
   );
 }
