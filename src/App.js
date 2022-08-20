@@ -3,6 +3,7 @@ import Buttons from './Components/Buttons/Buttons';
 import CoinPrices from './Components/CoinPrices/CoinPrices';
 import {COIN_API} from './api';
 import axios from 'axios';
+import uuid from 'react-uuid';
 import './App.css';
 //
 function App() {
@@ -26,7 +27,9 @@ function App() {
         {coinData
           .filter(coin => coin.symbol === coinId)
           .map(data => {
-            return <CoinPrices data={data}/>
+            return <CoinPrices 
+              key={uuid()}
+              data={data}/>
           }
             
         )}
