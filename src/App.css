@@ -48,6 +48,7 @@
 .crypto .btn {
   background: none;
   font-size: 1.3rem;
+  margin: 5px;
   font-weight: 600;
   border: 1.5px solid;
   border-radius: 10px;
@@ -90,39 +91,39 @@
   color: #23292F;
   border-color: #23292F;
 }
-.crypto .btn_avax:hover {
+.crypto .btn_avax:hover, .btn_avax:active {
   color: white;
   background: #E84142;
 }
-.crypto .btn_btc:hover {
+.crypto .btn_btc:hover, .btn_btc:active {
   color: white;
   background: #F7931A;
 }
-.crypto .btn_bnb:hover {
+.crypto .btn_bnb:hover, .btn_bnb:active {
   color: white;
   background: #F0B90B;
 }
-.crypto .btn_ada:hover {
+.crypto .btn_ada:hover, .btn_ada:active {
   color: white;
   background: #0033AD;
 }
-.crypto .btn_doge:hover {
+.crypto .btn_doge:hover, .btn_doge:active {
   color: white;
   background: #BA9F33;
 }
-.crypto .btn_eth:hover {
+.crypto .btn_eth:hover, .btn_eth:active {
   color: white;
   background: #343434;
 }
-.crypto .btn_dot:hover {
+.crypto .btn_dot:hover, .btn_dot:active {
   color: white;
   background: #E6007A;
 }
-.crypto .btn_sol:hover {
+.crypto .btn_sol:hover, .btn_sol:active {
   color: white;
   background: #7289D3;
 }
-.crypto .btn_xrp:hover {
+.crypto .btn_xrp:hover, .btn_xrp:active {
   color: white;
   background: #23292F;
 }
@@ -142,4 +143,23 @@
 }
 .price_container h2 span {
   font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+  .App header {
+    height: 80px;
+  }
+  .App header h1 {
+    font-size: 3.5rem;
+  }
+  .crypto img {
+    width: 120px;
+  }
+  .crypto .btn {
+    font-size: 1.6rem;
+    margin: 8px;
+  }
+  .price_container h2 {
+    font-size: 4rem;
+  }
 }
