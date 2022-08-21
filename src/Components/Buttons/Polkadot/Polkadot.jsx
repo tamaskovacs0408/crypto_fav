@@ -3,7 +3,7 @@ import DOTLogo from './dot.png';
 
 const Polkadot = (props) => {
   return (
-    <div>
+    <div className='crypto'>
       <img src={DOTLogo} alt="Polkadot logo" />
       <button value={'DOTUSDT'} onClick={props.handleClick}>
         Polkadot

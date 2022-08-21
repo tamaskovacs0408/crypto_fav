@@ -3,7 +3,7 @@ import SOLLogo from './sol.png';
 
 export default function Solana(props) {
   return (
-    <div>
+    <div className='crypto'>
       <img src={SOLLogo} alt="Solana logo" />
       <button value={'SOLUSDT'} onClick={props.handleClick}>
         Solana

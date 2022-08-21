@@ -3,7 +3,7 @@ import BTCLogo from './btc.png';
 
 const Bitcoin = (props) => {
   return (
-    <div>
+    <div className='crypto'>
       <img src={BTCLogo} alt="Bitcon logo" />
       <button value={'BTCUSDT'} onClick={props.handleClick}>
         Bitcoin

@@ -3,7 +3,7 @@ import AVAXLogo from './avax.png';
 
 const Avalanche = (props) => {
   return (
-    <div>
+    <div className='crypto'>
       <img src={AVAXLogo} alt="Avalanche logo" />
       <button value={'AVAXUSDT'} onClick={props.handleClick}>
         AVAX

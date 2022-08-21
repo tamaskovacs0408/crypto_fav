@@ -22,6 +22,9 @@ function App() {
 
   return (
     <div className="App"> 
+      <header>
+        <h1>GET CURRENT PRICE</h1>
+      </header>
       <Buttons handleClick={handleClick}/>
       <>
         {coinData

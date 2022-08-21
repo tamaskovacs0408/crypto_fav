@@ -3,7 +3,7 @@ import ETHLogo from "./eth.png";
 
 const Ethereum = (props) => {
   return (
-    <div>
+    <div className='crypto'>
       <img src={ETHLogo} alt="Ethereum logo" />
       <button value={"ETHUSDT"} onClick={props.handleClick}>
         Ethereum
