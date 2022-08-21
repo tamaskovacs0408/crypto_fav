@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/crypto_fav/static/css/main.44fc9866.css",
+    "main.js": "/crypto_fav/static/js/main.882e8176.js",
+    "static/js/787.00d2a10c.chunk.js": "/crypto_fav/static/js/787.00d2a10c.chunk.js",
+    "static/media/doge.png": "/crypto_fav/static/media/doge.a9424efadeaad7cd97e7.png",
+    "static/media/title_bg.jpg": "/crypto_fav/static/media/title_bg.581581928a0a9ddd24fd.jpg",
+    "static/media/eth.png": "/crypto_fav/static/media/eth.a85b6de0dc4a013ae2f8.png",
+    "static/media/sol.png": "/crypto_fav/static/media/sol.88dd9cd2498aebe1ee8c.png",
+    "static/media/bnb.png": "/crypto_fav/static/media/bnb.27f54c9b112c188df5b5.png",
+    "static/media/dot.png": "/crypto_fav/static/media/dot.f6a28fa08b3298a9a296.png",
+    "static/media/ada.png": "/crypto_fav/static/media/ada.d9b90224323ccff57026.png",
+    "static/media/btc.png": "/crypto_fav/static/media/btc.82491fef997ab841639c.png",
+    "static/media/xrp.png": "/crypto_fav/static/media/xrp.a30ac2af14f2c3a5461a.png",
+    "static/media/avax.png": "/crypto_fav/static/media/avax.e1fb45e8e070674b1a54.png",
+    "index.html": "/crypto_fav/index.html",
+    "main.44fc9866.css.map": "/crypto_fav/static/css/main.44fc9866.css.map",
+    "main.882e8176.js.map": "/crypto_fav/static/js/main.882e8176.js.map",
+    "787.00d2a10c.chunk.js.map": "/crypto_fav/static/js/787.00d2a10c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44fc9866.css",
+    "static/js/main.882e8176.js"
+  ]
+}
