@@ -5,7 +5,7 @@ export default function BNB(props) {
   return (
     <div className='crypto'>
       <img src={BNBLogo} alt="BNB logo" />
-      <button className='btn-56' onClick={props.handleClick} value={'BNBUSDT'}>
+      <button className='btn btn_bnb' onClick={props.handleClick} value={'BNBUSDT'}>
         BNB
       </button>
     </div>

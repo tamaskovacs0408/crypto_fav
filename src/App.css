@@ -45,73 +45,84 @@
   border-radius: 50%;
   margin: 10px;
 }
-.btn-56,
-.btn-56 *,
-.btn-56 :after,
-.btn-56 :before,
-.btn-56:after,
-.btn-56:before {
-  border: 0 solid;
-  box-sizing: border-box;
-}
-.btn-56 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-appearance: button;
+.crypto .btn {
   background: none;
-  background-image: none;
-  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: 1.5px solid;
+  border-radius: 10px;
   cursor: pointer;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
-  padding: 0;
-  transition: background-color ease-in 0.2s;
+  transition: all 0.3s ease-in-out;
 }
-.btn-56:disabled {
-  cursor: default;
+.crypto .btn_avax {
+  color: #E84142;
+  border-color: #E84142;
 }
-.btn-56:-moz-focusring {
-  outline: auto;
+.crypto .btn_btc {
+  color: #F7931A;
+  border-color: #F7931A;
 }
-.btn-56 svg {
-  display: block;
-  vertical-align: middle;
+.crypto .btn_bnb {
+  color: #F0B90B;
+  border-color: #F0B90B;
 }
-.btn-56 [hidden] {
-  display: none;
+.crypto .btn_ada {
+  color: #0033AD;
+  border-color: #0033AD;
 }
-.btn-56 {
-  border: 1px solid;
-  border-radius: 999px;
-  box-sizing: border-box;
-  display: block;
-  font-weight: 900;
-  -webkit-mask-image: none;
-  overflow: hidden;
-  padding: 1.2rem 3rem;
-  position: relative;
-  text-transform: uppercase;
+.crypto .btn_doge {
+  color: #BA9F33;
+  border-color: #BA9F33;
 }
-.btn-56:hover {
-  background-color: rgb(214, 214, 214);
+.crypto .btn_eth {
+  color: #343434;
+  border-color: #343434;
 }
-.btn-56:active {
-  -webkit-animation: pulse 0.5s;
-  animation: pulse 0.5s;
-  box-shadow: 0 0 0 2em transparent;
+.crypto .btn_dot {
+  color: #E6007A;
+  border-color: #E6007A;
 }
-@-webkit-keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #fff;
-  }
+.crypto .btn_sol {
+  color: #7289D3;
+  border-color: #7289D3;
 }
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 #fff;
-  }
+.crypto .btn_xrp {
+  color: #23292F;
+  border-color: #23292F;
 }
-
+.crypto .btn_avax:hover {
+  color: white;
+  background: #E84142;
+}
+.crypto .btn_btc:hover {
+  color: white;
+  background: #F7931A;
+}
+.crypto .btn_bnb:hover {
+  color: white;
+  background: #F0B90B;
+}
+.crypto .btn_ada:hover {
+  color: white;
+  background: #0033AD;
+}
+.crypto .btn_doge:hover {
+  color: white;
+  background: #BA9F33;
+}
+.crypto .btn_eth:hover {
+  color: white;
+  background: #343434;
+}
+.crypto .btn_dot:hover {
+  color: white;
+  background: #E6007A;
+}
+.crypto .btn_sol:hover {
+  color: white;
+  background: #7289D3;
+}
+.crypto .btn_xrp:hover {
+  color: white;
+  background: #23292F;
+}
