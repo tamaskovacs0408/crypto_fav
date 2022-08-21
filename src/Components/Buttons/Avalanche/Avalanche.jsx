@@ -5,7 +5,7 @@ const Avalanche = (props) => {
   return (
     <div className='crypto'>
       <img src={AVAXLogo} alt="Avalanche logo" />
-      <button value={'AVAXUSDT'} onClick={props.handleClick}>
+      <button className='btn-56' value={'AVAXUSDT'} onClick={props.handleClick}>
         AVAX
       </button>
     </div>

@@ -5,7 +5,7 @@ const Ethereum = (props) => {
   return (
     <div className='crypto'>
       <img src={ETHLogo} alt="Ethereum logo" />
-      <button value={"ETHUSDT"} onClick={props.handleClick}>
+      <button className='btn-56' value={"ETHUSDT"} onClick={props.handleClick}>
         Ethereum
       </button>
     </div>

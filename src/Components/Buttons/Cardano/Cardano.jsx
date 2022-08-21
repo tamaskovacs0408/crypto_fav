@@ -5,7 +5,7 @@ export default function Cardano(props) {
   return (
     <div className='crypto'>
       <img src={ADALogo} alt="Cardano logo" />
-      <button value={"ADAUSDT"} onClick={props.handleClick}>
+      <button className='btn-56' value={"ADAUSDT"} onClick={props.handleClick}>
         Cardano
       </button>
     </div>

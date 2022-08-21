@@ -5,7 +5,7 @@ const Polkadot = (props) => {
   return (
     <div className='crypto'>
       <img src={DOTLogo} alt="Polkadot logo" />
-      <button value={'DOTUSDT'} onClick={props.handleClick}>
+      <button className='btn-56' value={'DOTUSDT'} onClick={props.handleClick}>
         Polkadot
       </button>
     </div>
